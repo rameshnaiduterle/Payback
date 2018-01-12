@@ -12,6 +12,8 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 
 /**
 * 
+* 
+* 
  * @author Ramesh Naidu
  * @Category Security configurations.
  * Reference Link - Reference Link - https://projects.spring.io/spring-security-oauth/docs/oauth2.html
@@ -51,7 +53,7 @@ public class ApplicationSecurityConfig extends AuthorizationServerConfigurerAdap
 	 */
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		logger.info("");
+		logger.info("Trusted Client");
 		clients.inMemory().withClient("my-trusted-client")
 						.authorizedGrantTypes("client_credentials","password")
 						.authorities("ROLE_CLIENT","ROLE_TRUSTED_CLIENT")

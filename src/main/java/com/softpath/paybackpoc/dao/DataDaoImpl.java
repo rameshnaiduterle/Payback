@@ -72,6 +72,7 @@ public class DataDaoImpl implements DataDao {
 			}
 			 output = response1.getEntity(String.class);
 		} catch (Exception e) {
+			logger.error(e);
 			e.printStackTrace();
 		}
 		return output;
