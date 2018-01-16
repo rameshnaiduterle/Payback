@@ -11,9 +11,7 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 
 /**
-* 
-* 
-* 
+ * 
  * @author Ramesh Naidu
  * @Category Security configurations.
  * Reference Link - Reference Link - https://projects.spring.io/spring-security-oauth/docs/oauth2.html
@@ -48,7 +46,7 @@ public class ApplicationSecurityConfig extends AuthorizationServerConfigurerAdap
 
 	
 	/**
-	 * This method provides Clien Details Config info. 
+	 * This method provides Client Details Config info. 
 	 * 
 	 */
 	@Override
